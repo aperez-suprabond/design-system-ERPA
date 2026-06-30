@@ -1,0 +1,13 @@
+{
+  "space": [4, 8, 14, 18, 22, 30],
+  "radius": {
+    "sm": "8px",
+    "md": "10px",
+    "lg": "14px",
+    "card": "18px"
+  },
+  "shadow": {
+    "card": "0 1px 3px rgba(0,0,0,.06)"
+  },
+  "focusRing": "0 0 0 3px rgba(41,171,226,.15)"
+}

@@ -1,0 +1,14 @@
+{
+  "families": {
+    "heading": { "value": "Poppins", "weights": [600, 700, 800], "tracking": "-0.02em" },
+    "body":    { "value": "Google Sans", "fallback": "DM Sans", "weights": [400, 500, 700] }
+  },
+  "scale": {
+    "display": { "family": "heading", "weight": 800, "size": "48px", "lineHeight": 1.0 },
+    "h2":      { "family": "heading", "weight": 700, "size": "32px", "lineHeight": 1.1 },
+    "h3":      { "family": "heading", "weight": 600, "size": "22px", "lineHeight": 1.2 },
+    "body":    { "family": "body", "weight": 400, "size": "15px", "lineHeight": 1.7 },
+    "small":   { "family": "body", "weight": 500, "size": "13px", "lineHeight": 1.5 }
+  },
+  "note": "Google Sans no es de licencia libre; usar DM Sans como fallback para el render."
+}

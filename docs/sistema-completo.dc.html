@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="../lib/support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box;}
+  body{margin:0;background:#F4F5F6;}
+  ::selection{background:#FFD400;color:#111;}
+</style>
+</helmet>
+
+<div style="--yellow:{{ yellow }};--blue:{{ blue }};--ink:{{ ink }};font-family:'Google Sans','DM Sans',system-ui,sans-serif;color:#111315;background:#F4F5F6;min-height:100vh;">
+
+  <!-- ============ HERO ============ -->
+  <header style="background:#111315;color:#fff;padding:88px clamp(28px,6vw,96px) 72px;position:relative;overflow:hidden;">
+    <div style="position:absolute;top:-80px;right:-60px;width:340px;height:340px;border-radius:50%;background:var(--yellow);opacity:.16;"></div>
+    <div style="position:absolute;bottom:-120px;right:160px;width:260px;height:260px;border-radius:50%;background:var(--blue);opacity:.14;"></div>
+    <div style="position:relative;max-width:1100px;margin:0 auto;">
+      <div style="display:inline-flex;align-items:center;gap:10px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);padding:7px 16px;border-radius:100px;font-size:13px;letter-spacing:.14em;text-transform:uppercase;font-weight:500;">
+        <span style="width:9px;height:9px;border-radius:50%;background:var(--yellow);"></span>
+        Design System · v1.0
+      </div>
+      <h1 style="font-family:'Poppins',sans-serif;font-weight:800;font-size:clamp(48px,8vw,104px);line-height:.96;margin:26px 0 0;letter-spacing:-.02em;">
+        Suprabond<span style="color:var(--yellow);">.</span>
+      </h1>
+      <p style="font-size:clamp(17px,2vw,21px);max-width:620px;line-height:1.6;color:rgba(255,255,255,.74);margin:22px 0 0;">
+        El lenguaje visual de la marca ERPA. Fundamentos, tono y componentes para construir experiencias consistentes en tienda, web y producto.
+      </p>
+      <div style="display:flex;flex-wrap:wrap;gap:14px;margin-top:38px;">
+        <div style="display:flex;align-items:center;gap:12px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:14px;padding:14px 20px;">
+          <span style="font-family:'Poppins',sans-serif;font-weight:700;font-size:15px;">Aa</span>
+          <span style="font-size:14px;color:rgba(255,255,255,.7);">Poppins · DM Sans</span>
+        </div>
+        <div style="display:flex;align-items:center;gap:10px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:14px;padding:14px 20px;">
+          <span style="width:20px;height:20px;border-radius:6px;background:var(--yellow);"></span>
+          <span style="width:20px;height:20px;border-radius:6px;background:var(--blue);"></span>
+          <span style="width:20px;height:20px;border-radius:6px;background:#111;border:1px solid rgba(255,255,255,.3);"></span>
+          <span style="width:20px;height:20px;border-radius:6px;background:#fff;"></span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main style="max-width:1100px;margin:0 auto;padding:0 clamp(28px,6vw,96px) 120px;">
+
+    <!-- ============ COLOR ============ -->
+    <section style="padding-top:80px;">
+      <div style="display:flex;align-items:baseline;gap:16px;margin-bottom:8px;">
+        <span style="font-family:'Poppins',sans-serif;font-weight:700;font-size:14px;color:var(--blue);">01</span>
+        <span style="font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:#8A9099;font-weight:500;">Fundamentos</span>
+      </div>
+      <h2 style="font-family:'Poppins',sans-serif;font-weight:700;font-size:clamp(30px,4vw,46px);margin:0 0 12px;letter-spacing:-.02em;">Color</h2>
+      <p style="font-size:16px;color:#5A626B;max-width:560px;line-height:1.65;margin:0 0 36px;">Amarillo y negro como base de marca; celeste como acento de acción e información. Los neutros sostienen la estructura.</p>
+
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;">
+        <!-- Yellow -->
+        <div style="background:#fff;border-radius:18px;overflow:hidden;box-shadow:0 1px 3px rgba(0,0,0,.06);">
+          <div style="height:130px;background:var(--yellow);"></div>
+          <div style="padding:18px 20px;">
+            <div style="font-family:'Poppins',sans-serif;font-weight:600;font-size:17px;">Amarillo Suprabond</div>
+            <div style="display:flex;justify-content:space-between;margin-top:8px;font-size:13px;color:#8A9099;font-family:'DM Sans',monospace;"><span>HEX</span><span style="color:#111;font-weight:500;">#FFD400</span></div>
+            <div style="font-size:13px;color:#5A626B;margin-top:10px;line-height:1.5;">Primario · CTAs, marca, destacados</div>
+          </div>
+        </div>
+        <!-- Blue -->
+        <div style="background:#fff;border-radius:18px;overflow:hidden;box-shadow:0 1px 3px rgba(0,0,0,.06);">
+          <div style="height:130px;background:var(--blue);"></div>
+          <div style="padding:18px 20px;">
+            <div style="font-family:'Poppins',sans-serif;font-weight:600;font-size:17px;">Celeste</div>
+            <div style="display:flex;justify-content:space-between;margin-top:8px;font-size:13px;color:#8A9099;font-family:'DM Sans',monospace;"><span>HEX</span><span style="color:#111;font-weight:500;">#29ABE2</span></div>
+            <div style="font-size:13px;color:#5A626B;margin-top:10px;line-height:1.5;">Acento · enlaces, info, secundarios</div>
+          </div>
+        </div>
+        <!-- Black -->
+        <div style="background:#fff;border-radius:18px;overflow:hidden;box-shadow:0 1px 3px rgba(0,0,0,.06);">
+          <div style="height:130px;background:#111315;"></div>
+          <div style="padding:18px 20px;">
+            <div style="font-family:'Poppins',sans-serif;font-weight:600;font-size:17px;">Negro</div>
+            <div style="display:flex;justify-content:space-between;margin-top:8px;font-size:13px;color:#8A9099;font-family:'DM Sans',monospace;"><span>HEX</span><span style="color:#111;font-weight:500;">#111315</span></div>
+            <div style="font-size:13px;color:#5A626B;margin-top:10px;line-height:1.5;">Texto principal, fondos sólidos</div>
+          </div>
+        </div>
+        <!-- White -->
+        <div style="background:#fff;border-radius:18px;overflow:hidden;box-shadow:0 1px 3px rgba(0,0,0,.06);">
+          <div style="height:130px;background:#fff;border-bottom:1px solid #ECEDEF;"></div>
+          <div style="padding:18px 20px;">
+            <div style="font-family:'Poppins',sans-serif;font-weight:600;font-size:17px;">Blanco</div>
+            <div style="display:flex;justify-content:space-between;margin-top:8px;font-size:13px;color:#8A9099;font-family:'DM Sans',monospace;"><span>HEX</span><span style="color:#111;font-weight:500;">#FFFFFF</span></div>
+            <div style="font-size:13px;color:#5A626B;margin-top:10px;line-height:1.5;">Superficies, tarjetas, fondos</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Neutrals ramp -->
+      <div style="margin-top:22px;background:#fff;border-radius:18px;padding:24px 26px;box-shadow:0 1px 3px rgba(0,0,0,.06);">
+        <div style="font-family:'Poppins',sans-serif;font-weight:600;font-size:15px;margin-bottom:16px;">Neutros</div>
+        <div style="display:grid;grid-template-columns:repeat(7,1fr);gap:10px;">
+          <div style="text-align:center;"><div style="height:56px;border-radius:10px;background:#111315;"></div><div style="font-size:11px;color:#8A9099;margin-top:6px;font-family:'DM Sans',monospace;">900</div></div>
+          <div style="text-align:center;"><div style="height:56px;border-radius:10px;background:#2D3138;"></div><div style="font-size:11px;color:#8A9099;margin-top:6px;font-family:'DM Sans',monospace;">800</div></div>
+          <div style="text-align:center;"><div style="height:56px;border-radius:10px;background:#5A626B;"></div><div style="font-size:11px;color:#8A9099;margin-top:6px;font-family:'DM Sans',monospace;">600</div></div>
+          <div style="text-align:center;"><div style="height:56px;border-radius:10px;background:#8A9099;"></div><div style="font-size:11px;color:#8A9099;margin-top:6px;font-family:'DM Sans',monospace;">400</div></div>
+          <div style="text-align:center;"><div style="height:56px;border-radius:10px;background:#C9CDD2;"></div><div style="font-size:11px;color:#8A9099;margin-top:6px;font-family:'DM Sans',monospace;">300</div></div>
+          <div style="text-align:center;"><div style="height:56px;border-radius:10px;background:#ECEDEF;"></div><div style="font-size:11px;color:#8A9099;margin-top:6px;font-family:'DM Sans',monospace;">100</div></div>
+          <div style="text-align:center;"><div style="height:56px;border-radius:10px;background:#F4F5F6;border:1px solid #ECEDEF;"></div><div style="font-size:11px;color:#8A9099;margin-top:6px;font-family:'DM Sans',monospace;">50</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TYPOGRAPHY ============ -->
+    <section style="padding-top:80px;">
+      <div style="display:flex;align-items:baseline;gap:16px;margin-bottom:8px;">
+        <span style="font-family:'Poppins',sans-serif;font-weight:700;font-size:14px;color:var(--blue);">02</span>
+        <span style="font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:#8A9099;font-weight:500;">Fundamentos</span>
+      </div>
+      <h2 style="font-family:'Poppins',sans-serif;font-weight:700;font-size:clamp(30px,4vw,46px);margin:0 0 12px;letter-spacing:-.02em;">Tipografía</h2>
+      <p style="font-size:16px;color:#5A626B;max-width:560px;line-height:1.65;margin:0 0 36px;">Poppins Bold para titulares — geométrica, robusta, con carácter. Google Sans (DM Sans) para texto — limpia y altamente legible.</p>
+
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:18px;">
+        <div style="background:#fff;border-radius:18px;padding:30px 32px;box-shadow:0 1px 3px rgba(0,0,0,.06);">
+          <div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:20px;"><span style="font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:#8A9099;font-weight:500;">Titulares</span><span style="font-size:13px;color:#5A626B;font-family:'DM Sans',monospace;">Poppins</span></div>
+          <div style="font-family:'Poppins',sans-serif;font-weight:800;font-size:52px;line-height:1;letter-spacing:-.02em;">Pegá fuerte</div>
+          <div style="font-family:'Poppins',sans-serif;font-weight:700;font-size:30px;line-height:1.1;margin-top:18px;">Adhesivos y cintas</div>
+          <div style="font-family:'Poppins',sans-serif;font-weight:600;font-size:20px;line-height:1.2;margin-top:14px;color:#2D3138;">Soluciones para cada superficie</div>
+        </div>
+        <div style="background:#fff;border-radius:18px;padding:30px 32px;box-shadow:0 1px 3px rgba(0,0,0,.06);">
+          <div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:20px;"><span style="font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:#8A9099;font-weight:500;">Texto</span><span style="font-size:13px;color:#5A626B;font-family:'DM Sans',monospace;">Google Sans</span></div>
+          <p style="font-size:18px;line-height:1.6;margin:0 0 16px;color:#2D3138;">Texto destacado para introducir secciones y comunicar beneficios de producto con claridad.</p>
+          <p style="font-size:15px;line-height:1.7;margin:0;color:#5A626B;">Cuerpo de texto estándar para descripciones, especificaciones técnicas y contenido extenso. Diseñado para máxima legibilidad en pantallas de cualquier tamaño y resolución.</p>
+        </div>
+      </div>
+
+      <!-- type scale -->
+      <div style="margin-top:18px;background:#fff;border-radius:18px;padding:8px 32px;box-shadow:0 1px 3px rgba(0,0,0,.06);">
+        <div style="display:flex;align-items:baseline;gap:24px;padding:18px 0;border-bottom:1px solid #ECEDEF;"><span style="width:90px;font-family:'DM Sans',monospace;font-size:13px;color:#8A9099;">H1 · 48</span><span style="font-family:'Poppins',sans-serif;font-weight:800;font-size:34px;">Display</span></div>
+        <div style="display:flex;align-items:baseline;gap:24px;padding:18px 0;border-bottom:1px solid #ECEDEF;"><span style="width:90px;font-family:'DM Sans',monospace;font-size:13px;color:#8A9099;">H2 · 32</span><span style="font-family:'Poppins',sans-serif;font-weight:700;font-size:28px;">Sección</span></div>
+        <div style="display:flex;align-items:baseline;gap:24px;padding:18px 0;border-bottom:1px solid #ECEDEF;"><span style="width:90px;font-family:'DM Sans',monospace;font-size:13px;color:#8A9099;">H3 · 22</span><span style="font-family:'Poppins',sans-serif;font-weight:600;font-size:22px;">Subtítulo</span></div>
+        <div style="display:flex;align-items:baseline;gap:24px;padding:18px 0;border-bottom:1px solid #ECEDEF;"><span style="width:90px;font-family:'DM Sans',monospace;font-size:13px;color:#8A9099;">Body · 15</span><span style="font-size:15px;color:#2D3138;">Texto de párrafo estándar</span></div>
+        <div style="display:flex;align-items:baseline;gap:24px;padding:18px 0;"><span style="width:90px;font-family:'DM Sans',monospace;font-size:13px;color:#8A9099;">Small · 13</span><span style="font-size:13px;color:#5A626B;">Etiquetas, notas y metadatos</span></div>
+      </div>
+    </section>
+
+    <!-- ============ BUTTONS ============ -->
+    <section style="padding-top:80px;">
+      <div style="display:flex;align-items:baseline;gap:16px;margin-bottom:8px;">
+        <span style="font-family:'Poppins',sans-serif;font-weight:700;font-size:14px;color:var(--blue);">03</span>
+        <span style="font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:#8A9099;font-weight:500;">Componentes</span>
+      </div>
+      <h2 style="font-family:'Poppins',sans-serif;font-weight:700;font-size:clamp(30px,4vw,46px);margin:0 0 12px;letter-spacing:-.02em;">Botones</h2>
+      <p style="font-size:16px;color:#5A626B;max-width:560px;line-height:1.65;margin:0 0 36px;">Jerarquía clara: amarillo para la acción principal, oscuro para secundarias, celeste para enlaces e información.</p>
+
+      <div style="background:#fff;border-radius:18px;padding:38px 36px;box-shadow:0 1px 3px rgba(0,0,0,.06);">
+        <div style="display:flex;flex-wrap:wrap;gap:16px;align-items:center;">
+          <button style="font-family:'Poppins',sans-serif;font-weight:600;font-size:15px;color:#111;background:var(--yellow);border:none;padding:14px 30px;border-radius:12px;cursor:pointer;box-shadow:0 4px 14px rgba(255,212,0,.4);transition:transform .12s,box-shadow .12s;" style-hover="transform:translateY(-2px);box-shadow:0 8px 22px rgba(255,212,0,.5);">Comprar ahora</button>
+          <button style="font-family:'Poppins',sans-serif;font-weight:600;font-size:15px;color:#fff;background:#111315;border:none;padding:14px 30px;border-radius:12px;cursor:pointer;transition:transform .12s;" style-hover="transform:translateY(-2px);background:#2D3138;">Ver catálogo</button>
+          <button style="font-family:'Poppins',sans-serif;font-weight:600;font-size:15px;color:var(--blue);background:#fff;border:1.5px solid var(--blue);padding:13px 28px;border-radius:12px;cursor:pointer;transition:background .12s;" style-hover="background:#EAF7FD;">Más info</button>
+          <button style="font-family:'Poppins',sans-serif;font-weight:600;font-size:15px;color:#5A626B;background:transparent;border:none;padding:14px 22px;border-radius:12px;cursor:pointer;" style-hover="color:#111;background:#F4F5F6;">Cancelar</button>
+          <button style="font-family:'Poppins',sans-serif;font-weight:600;font-size:15px;color:#A6ABB1;background:#ECEDEF;border:none;padding:14px 30px;border-radius:12px;cursor:not-allowed;">Agotado</button>
+        </div>
+        <div style="display:flex;flex-wrap:wrap;gap:16px;align-items:center;margin-top:22px;">
+          <button style="font-family:'Poppins',sans-serif;font-weight:600;font-size:13px;color:#111;background:var(--yellow);border:none;padding:10px 22px;border-radius:10px;cursor:pointer;">Pequeño</button>
+          <button style="font-family:'Poppins',sans-serif;font-weight:600;font-size:15px;color:#111;background:var(--yellow);border:none;padding:14px 30px;border-radius:12px;cursor:pointer;">Mediano</button>
+          <button style="font-family:'Poppins',sans-serif;font-weight:600;font-size:17px;color:#111;background:var(--yellow);border:none;padding:18px 40px;border-radius:14px;cursor:pointer;">Grande</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ INPUTS ============ -->
+    <section style="padding-top:60px;">
+      <h3 style="font-family:'Poppins',sans-serif;font-weight:700;font-size:24px;margin:0 0 24px;">Formularios</h3>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:18px;">
+        <div style="background:#fff;border-radius:18px;padding:30px 32px;box-shadow:0 1px 3px rgba(0,0,0,.06);">
+          <label style="display:block;font-size:13px;font-weight:500;color:#2D3138;margin-bottom:8px;">Email</label>
+          <input type="text" placeholder="nombre@empresa.com" style="width:100%;font-family:'DM Sans',sans-serif;font-size:15px;padding:13px 16px;border:1.5px solid #C9CDD2;border-radius:11px;outline:none;color:#111;" style-focus="border-color:var(--blue);box-shadow:0 0 0 3px rgba(41,171,226,.15);">
+          <label style="display:block;font-size:13px;font-weight:500;color:#2D3138;margin:20px 0 8px;">Cantidad</label>
+          <input type="text" value="12 unidades" style="width:100%;font-family:'DM Sans',sans-serif;font-size:15px;padding:13px 16px;border:1.5px solid var(--blue);border-radius:11px;outline:none;color:#111;box-shadow:0 0 0 3px rgba(41,171,226,.15);">
+        </div>
+        <div style="background:#fff;border-radius:18px;padding:30px 32px;box-shadow:0 1px 3px rgba(0,0,0,.06);">
+          <label style="display:block;font-size:13px;font-weight:500;color:#2D3138;margin-bottom:8px;">CUIT</label>
+          <input type="text" value="20-1234" style="width:100%;font-family:'DM Sans',sans-serif;font-size:15px;padding:13px 16px;border:1.5px solid #E5484D;border-radius:11px;outline:none;color:#111;box-shadow:0 0 0 3px rgba(229,72,77,.12);">
+          <div style="font-size:12.5px;color:#E5484D;margin-top:8px;">Ingresá un CUIT válido de 11 dígitos.</div>
+          <label style="display:block;font-size:13px;font-weight:500;color:#A6ABB1;margin:20px 0 8px;">Código (deshabilitado)</label>
+          <input type="text" placeholder="—" disabled style="width:100%;font-family:'DM Sans',sans-serif;font-size:15px;padding:13px 16px;border:1.5px solid #ECEDEF;border-radius:11px;outline:none;background:#F4F5F6;color:#A6ABB1;">
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ BADGES ============ -->
+    <section style="padding-top:60px;">
+      <h3 style="font-family:'Poppins',sans-serif;font-weight:700;font-size:24px;margin:0 0 24px;">Badges y etiquetas</h3>
+      <div style="background:#fff;border-radius:18px;padding:32px 36px;box-shadow:0 1px 3px rgba(0,0,0,.06);display:flex;flex-wrap:wrap;gap:14px;align-items:center;">
+        <span style="font-family:'Poppins',sans-serif;font-weight:600;font-size:12px;letter-spacing:.04em;color:#111;background:var(--yellow);padding:7px 15px;border-radius:8px;">NUEVO</span>
+        <span style="font-family:'Poppins',sans-serif;font-weight:600;font-size:12px;letter-spacing:.04em;color:#fff;background:#E5484D;padding:7px 15px;border-radius:8px;">-25% OFF</span>
+        <span style="font-family:'Poppins',sans-serif;font-weight:600;font-size:12px;letter-spacing:.04em;color:#fff;background:var(--blue);padding:7px 15px;border-radius:8px;">DESTACADO</span>
+        <span style="display:inline-flex;align-items:center;gap:7px;font-size:13px;font-weight:500;color:#1B8A5A;background:#E7F6EE;padding:7px 14px;border-radius:8px;"><span style="width:7px;height:7px;border-radius:50%;background:#1B8A5A;"></span>En stock</span>
+        <span style="display:inline-flex;align-items:center;gap:7px;font-size:13px;font-weight:500;color:#B25E09;background:#FCF1E2;padding:7px 14px;border-radius:8px;"><span style="width:7px;height:7px;border-radius:50%;background:#B25E09;"></span>Últimas unidades</span>
+        <span style="font-size:13px;font-weight:500;color:#5A626B;background:#ECEDEF;padding:7px 14px;border-radius:8px;">Industrial</span>
+      </div>
+    </section>
+
+    <!-- ============ PRODUCT CARDS ============ -->
+    <section style="padding-top:80px;">
+      <div style="display:flex;align-items:baseline;gap:16px;margin-bottom:8px;">
+        <span style="font-family:'Poppins',sans-serif;font-weight:700;font-size:14px;color:var(--blue);">04</span>
+        <span style="font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:#8A9099;font-weight:500;">Componentes</span>
+      </div>
+      <h2 style="font-family:'Poppins',sans-serif;font-weight:700;font-size:clamp(30px,4vw,46px);margin:0 0 36px;letter-spacing:-.02em;">Tarjeta de producto</h2>
+
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px;">
+        <sc-for list="{{ products }}" as="p" hint-placeholder-count="3">
+          <div style="background:#fff;border-radius:18px;overflow:hidden;box-shadow:0 1px 3px rgba(0,0,0,.06);transition:transform .15s,box-shadow .15s;" style-hover="transform:translateY(-4px);box-shadow:0 12px 30px rgba(0,0,0,.1);">
+            <div style="position:relative;height:200px;background-image:repeating-linear-gradient(45deg,#F4F5F6 0 12px,#ECEDEF 12px 24px);display:flex;align-items:center;justify-content:center;">
+              <span style="position:absolute;top:14px;left:14px;font-family:'Poppins',sans-serif;font-weight:600;font-size:11px;color:#111;background:var(--yellow);padding:5px 11px;border-radius:7px;">{{ p.tag }}</span>
+              <span style="font-family:'DM Sans',monospace;font-size:12px;color:#A6ABB1;">foto de producto</span>
+            </div>
+            <div style="padding:20px 22px 24px;">
+              <div style="font-size:12px;color:var(--blue);font-weight:600;letter-spacing:.04em;text-transform:uppercase;">{{ p.cat }}</div>
+              <div style="font-family:'Poppins',sans-serif;font-weight:600;font-size:18px;margin:6px 0 4px;line-height:1.25;">{{ p.name }}</div>
+              <div style="font-size:13.5px;color:#8A9099;line-height:1.5;">{{ p.desc }}</div>
+              <div style="display:flex;align-items:center;justify-content:space-between;margin-top:18px;">
+                <span style="font-family:'Poppins',sans-serif;font-weight:700;font-size:22px;">{{ p.price }}</span>
+                <button style="font-family:'Poppins',sans-serif;font-weight:600;font-size:13px;color:#111;background:var(--yellow);border:none;padding:10px 18px;border-radius:10px;cursor:pointer;">Agregar</button>
+              </div>
+            </div>
+          </div>
+        </sc-for>
+      </div>
+    </section>
+
+    <!-- ============ HEADER MOCK ============ -->
+    <section style="padding-top:80px;">
+      <div style="display:flex;align-items:baseline;gap:16px;margin-bottom:8px;">
+        <span style="font-family:'Poppins',sans-serif;font-weight:700;font-size:14px;color:var(--blue);">05</span>
+        <span style="font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:#8A9099;font-weight:500;">Patrones</span>
+      </div>
+      <h2 style="font-family:'Poppins',sans-serif;font-weight:700;font-size:clamp(30px,4vw,46px);margin:0 0 36px;letter-spacing:-.02em;">Header de tienda</h2>
+
+      <div style="border-radius:18px;overflow:hidden;box-shadow:0 1px 3px rgba(0,0,0,.06);">
+        <div style="background:#111315;color:#fff;display:flex;align-items:center;justify-content:space-between;padding:18px 30px;flex-wrap:wrap;gap:16px;">
+          <div style="display:flex;align-items:center;gap:34px;">
+            <span style="font-family:'Poppins',sans-serif;font-weight:800;font-size:22px;letter-spacing:-.02em;">Suprabond<span style="color:var(--yellow);">.</span></span>
+            <nav style="display:flex;gap:24px;font-size:14px;font-weight:500;color:rgba(255,255,255,.78);">
+              <span>Adhesivos</span><span>Cintas</span><span>Selladores</span><span>Industria</span>
+            </nav>
+          </div>
+          <div style="display:flex;align-items:center;gap:14px;">
+            <div style="background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14);border-radius:10px;padding:9px 18px;font-size:13px;color:rgba(255,255,255,.6);min-width:200px;">Buscar productos…</div>
+            <button style="font-family:'Poppins',sans-serif;font-weight:600;font-size:13px;color:#111;background:var(--yellow);border:none;padding:10px 18px;border-radius:10px;cursor:pointer;">Mi carrito</button>
+          </div>
+        </div>
+        <div style="background:var(--yellow);color:#111;text-align:center;padding:11px;font-size:13.5px;font-weight:600;font-family:'Poppins',sans-serif;">Envío gratis en compras superiores a $50.000 · Pedidos mayoristas</div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <div style="margin-top:90px;padding-top:30px;border-top:1px solid #ECEDEF;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;color:#8A9099;font-size:13px;">
+      <span>Sistema de Diseño Suprabond · ERPA</span>
+      <span style="font-family:'DM Sans',monospace;">v1.0 — 2026</span>
+    </div>
+
+  </main>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:1100},&quot;yellow&quot;:{&quot;editor&quot;:&quot;color&quot;,&quot;default&quot;:&quot;#FFD400&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Marca&quot;},&quot;blue&quot;:{&quot;editor&quot;:&quot;color&quot;,&quot;default&quot;:&quot;#29ABE2&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Marca&quot;},&quot;ink&quot;:{&quot;editor&quot;:&quot;color&quot;,&quot;default&quot;:&quot;#111315&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Marca&quot;}}">
+class Component extends DCLogic {
+  renderVals() {
+    return {
+      yellow: this.props.yellow ?? '#FFD400',
+      blue: this.props.blue ?? '#29ABE2',
+      ink: this.props.ink ?? '#111315',
+      products: [
+        { tag: 'NUEVO', cat: 'Adhesivos', name: 'Adhesivo Instantáneo Pro', desc: 'Fijación en segundos para múltiples superficies.', price: '$3.450' },
+        { tag: 'TOP', cat: 'Cintas', name: 'Cinta Doble Faz Industrial', desc: 'Alta adherencia para montaje y reparación.', price: '$5.890' },
+        { tag: 'OFERTA', cat: 'Selladores', name: 'Sellador Multiuso Flex', desc: 'Resistente al agua y a la intemperie.', price: '$4.200' }
+      ]
+    };
+  }
+}
+</script>
+</body>
+</html>

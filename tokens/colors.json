@@ -1,0 +1,26 @@
+{
+  "brand": {
+    "yellow":  { "value": "#FFD400", "description": "Primario · CTAs, marca, destacados" },
+    "blue":    { "value": "#29ABE2", "description": "Acento · enlaces, info, secundarios" },
+    "black":   { "value": "#111315", "description": "Texto principal, fondos sólidos" },
+    "white":   { "value": "#FFFFFF", "description": "Superficies, tarjetas, fondos" }
+  },
+  "neutral": {
+    "900": "#111315",
+    "800": "#2D3138",
+    "600": "#5A626B",
+    "400": "#8A9099",
+    "300": "#C9CDD2",
+    "100": "#ECEDEF",
+    "50":  "#F4F5F6"
+  },
+  "semantic": {
+    "success": "#1B8A5A",
+    "warning": "#B25E09",
+    "error":   "#E5484D"
+  },
+  "dark": {
+    "background": "#0C0E10",
+    "surface":    "#16191D"
+  }
+}
